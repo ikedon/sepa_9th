@@ -5,5 +5,6 @@
 
 以下サンプルを置いてます。
 
-- 各章サンプル
-- 
+- 各章サンプル（chXX.md）
+- textlint設定ファイル（.textlintrc）
+- textlint用語揺らぎルール（rule.yml）
