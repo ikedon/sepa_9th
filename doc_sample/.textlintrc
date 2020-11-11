@@ -1,0 +1,137 @@
+﻿{
+  "filters": {
+    // <!-- textlint-disable -->で対象範囲をtextlintから除外する
+    "comments": true,
+    // 許可用語リスト（過去はWhitelistだったもの）用語としてはずしたいものを入れる
+    // 各自で困った場合、以下に追加して回避してください
+    "allowlist": {
+      "allow": [
+        "ignored-word",
+        "正しく",
+        "計画を実行に移す",
+        "最も",
+        "同様に",
+        "こなし",
+        "程度", "過程", "旅程",
+        "正直かつ"
+      ]
+    }
+  },
+
+  "rules": {
+    // 任意の用語ルール、別途データについては管理予定
+    "prh": {
+      "rulePaths" :["./rule.yml"]
+    },
+    // 技術用語について辞書＋Web DB用語を元にチェックする日本語向けのルール
+    "spellcheck-tech-word": true,
+
+    // 技術文書向けのtextlintルール
+    "preset-ja-technical-writing": {
+      // 1文の長さ：120文字かつ警告のみとして緩くしてます。
+      "sentence-length": {
+        "max": 120,
+        "severity": "warning"
+      },
+      // 1文中のカンマ
+      "max-comma": {
+        max: 3
+      },
+      // 1文中の読点、少しゆるめにしてます。
+      "max-ten": {
+        max: 4,
+        "severity": "warning"
+      },
+      // 連続できる最大の漢字長 : 固有名詞は allow オプションに記述して回避できる
+      "max-kanji-continuous-len": {
+        max: 7,
+        // 7文字以上連続する固定用語は以下に追加していくことで許可できる
+        "allow": []
+      },
+      // 漢数字と算用数字を使い分けます
+      "arabic-kanji-numbers": true,
+      // 「ですます調」、「である調」を統一する
+      "no-mix-dearu-desumasu": {
+        // 見出し、本文、箇条書きはである調、文末以外のチェックをしない
+        "preferInHeader": "である",
+        "preferInBody": "である",
+        "preferInList": "である",
+        "strict": false
+      },
+      // 文末の句点記号に「。」を使う
+      "ja-no-mixed-period": {
+        "periodMark": "。"
+      },
+      // 二重否定は使用しない
+      "no-double-negative-ja": true,
+      // ら抜き言葉を使用しない
+      "no-dropping-the-ra": true,
+      // 逆接の接続助詞「が」を連続して使用しない
+      "no-doubled-conjunctive-particle-ga": true,
+      // 同じ接続詞を連続して使用しない
+      "no-doubled-conjunction": true,
+      // 同じ助詞を連続して使用しない、うるさいので警告としてます。気になったら外してください
+      "no-doubled-joshi": {
+        "min_interval": 1,
+        "severity": "warning"
+      },
+      // UTF8-MAC 濁点を使用しない
+      "no-nfd": true,
+      // 不必要な制御文字を使用しない
+      "no-invalid-control-character": true,
+      // 感嘆符「!！?？」を使用を禁止する：使用可能とする
+      "no-exclamation-question-mark": false,
+      // 半角カナを使用しない
+      "no-hankaku-kana": true,
+      // 弱い日本語表現の利用を使用しない
+      "ja-no-weak-phrase": true,
+      // 同一の単語を間違えて連続しているのをチェックする
+      "ja-no-successive-word": true,
+      // よくある日本語の誤用をチェックする
+      "ja-no-abusage": true,
+      // 冗長な表現をチェックする："することができる"という冗長な表現を"できる"にする
+      "ja-no-redundant-expression": {
+        "severity": "warning"
+      },
+      // 入力ミスで発生する不自然なアルファベットをチェックする
+      "ja-unnatural-alphabet": true,
+      // 対になっていない括弧をチェックする：今回は括弧が遠いケースがあるのでwarining
+      "no-unmatched-pair": {
+        "severity": "warning"
+      }
+    },
+
+    // 日本語周りにおけるスペースの有無を決定する textlint ルールプリセット
+    "preset-ja-spacing": {
+      // 半角文字と全角文字の間にスペースを入れるかどうか 最後の設問対策でfalse
+      "ja-space-between-half-and-full-width": false,
+      // インラインコードの前後が日本語である場合に半角スペースを入れるか
+      "ja-space-around-code": true,
+      // 全角文字どうしの間にスペースを入れない
+      "ja-no-space-between-full-width": true,
+      // カタカナ語間は中黒または半角スペースを用いて区切る
+      "ja-nakaguro-or-halfwidth-space-between-katakana": true,
+      // かっこの外側、内側ともにスペースを入れない 最後の設問対策でfalse
+      "ja-no-space-around-parentheses": false,
+      // 文末に感嘆符を使用し、後に別の文が続く場合は、直後に全角スペースを挿入する
+      "ja-space-after-exclamation": true,
+      // 文末に疑問符を使用し、後に別の文が続く場合は、直後に全角スペースを挿入する
+      "ja-space-after-question": true
+    },
+
+    // 以下、その他雑多な内容（なくてもよいかも）
+
+    // 箇条書きのピリオド、句点のチェック
+    "textlint-rule-period-in-list-item": false,
+    // 漢字よりもひらがなで表記したほうが読みやすい形式名詞を指摘
+    "textlint-rule-ja-hiragana-keishikimeishi": true,
+    // 漢字よりもひらがなで表記したほうが読みやすい副詞
+    "ja-hiragana-fukushi": true,
+    // 漢字よりもひらがなで表記したほうが読みやすい補助動詞を指摘する
+    "ja-hiragana-hojodoushi": true,
+    // 全角と半角アルファベットを混在をチェックするtextlintルール
+    "no-mixed-zenkaku-and-hankaku-alphabet":true,
+    // 引用の順序をチェック
+    "textlint-rule-footnote-order":true
+  }
+}

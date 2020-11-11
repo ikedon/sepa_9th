@@ -80,13 +80,15 @@ textlintに設定したルールに関して以下にまとめます。厳しめ
 1. Node.js / npmをインストールする（for Windows） ※インストールしてない場合　[参考サイト](https://qiita.com/taiponrock/items/9001ae194571feb63a5e)
 2. textlint及びルールをインストールする　[参考サイト](https://mk-55.hatenablog.com/entry/2018/03/24/004339)
 
-ルール含めたインストールコマンドは以下となります。ローカルインストール or グローバルインストールはお任せします。（下記コマンドはローカルインストール向け）
+    ルール含めたインストールコマンドは以下となります。ローカルインストール or グローバルインストールはお任せします。（下記コマンドはローカルインストール向けのコマンドです）
 
-```npm install textlint textlint-filter-rule-comments textlint-filter-rule-allowlist textlint-rule-prh textlint-rule-spellcheck-tech-word textlint-rule-preset-ja-technical-writing textlint-rule-preset-ja-spacing textlint-rule-period-in-list-item textlint-rule-ja-hiragana-keishikimeishi textlint-rule-ja-hiragana-fukushi textlint-rule-ja-hiragana-hojodoushi textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet textlint-rule-footnote-order```
+```
+npm install textlint textlint-filter-rule-comments textlint-filter-rule-allowlist textlint-rule-prh textlint-rule-spellcheck-tech-word textlint-rule-preset-ja-technical-writing textlint-rule-preset-ja-spacing textlint-rule-period-in-list-item textlint-rule-ja-hiragana-keishikimeishi textlint-rule-ja-hiragana-fukushi textlint-rule-ja-hiragana-hojodoushi textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet textlint-rule-footnote-order
+```
 
 3. 設定ファイルとして.textlintrcとrule.ymlを用意する
 
-VSCodeであれば、「ワークスペースを開く」で作業フォルダで開き、ターミナルでtextlintコマンドを実行することで、動作確認することができます。（サンプル用のchXX.mdでいくつかエラーが出るようにしています）
+    VSCodeであれば、「ワークスペースを開く」で作業フォルダで開き、ターミナルでtextlintコマンドを実行することで、動作確認することができます。（サンプル用のchXX.mdでいくつかエラーが出るようにしています）
 
 
 ### 4.2 Windowデスクトップ版を使った簡易チェック方法
