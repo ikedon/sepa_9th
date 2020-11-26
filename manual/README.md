@@ -89,7 +89,7 @@ IEEEソフトウェアのジャーナル特別編において、ゲスト執筆�
 以下が例です。
 
 -----
-## 2.3 <span class="index">タスクセット</span>の特定
+## 2.3 <font color="green">タスクセット</font>の特定
 
 図2.1について再度確認しよう。各ソフトウェアエンジニアリングアクション（例：コミュニケーションアクティビティにて必要とされる要求獲得アクション）は、<span class="index">成果物</span>、<span class="index">品質保証ポイント</span>、プロジェクト<span class="index">マイルストン</span>、実施するタスクの集合体であるタスクセットによって表現される。
 
@@ -168,7 +168,3 @@ Time 時間
 
 - [spellcheck_tech_word参照用語揺らぎルール](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=1672926234)
 - [rule.yml独自設定用語揺らぎルール](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=111415593)
-
-<style scoped>
-.index {color: green; }
-</style>
