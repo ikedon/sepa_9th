@@ -10,6 +10,9 @@ rules:
       - ヶ月
       - ケ月
 
+  - expected: もつ
+    pattern:  持つ
+
 # 統一向けテクニカルワード（今後追加：既にあるTechWord以外の内容であれば追加）
 
   - expected: ウォーター
