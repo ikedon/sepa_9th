@@ -8,4 +8,12 @@
 - 各章サンプル（chXX.md）
 - 各章表サンプル（chXX.xlsx）
 - textlint設定ファイル（.textlintrc）
-- textlint用語揺らぎ設定ルール（rule.yml）
+- textlint用語揺らぎ設定ルール（prhに配置）
+    - 共通rule（common.yml）
+    - 1部rule（part1.yml）
+    - 2部rule（part2.yml）
+    - 3部rule（part3.yml）
+    - 4部rule（part4.yml）
+    - 5部rule（part5.yml）
+    - Appendix等その他rule（other.yml）
+
