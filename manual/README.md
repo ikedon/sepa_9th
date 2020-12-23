@@ -4,7 +4,7 @@
 
 注：こちらはガイド的な内容ですので、翻訳作業に多しいて厳しいと判断した場合には修正します。
 
-あわせて、[章終了時の翻訳チェックリスト](https://docs.google.com/spreadsheets/d/1KF_Uq4Jhy5t-V3l_yZAjl16a-s0TrS8D/edit#gid=1033566868)も活用ください。
+あわせて、[章終了時の翻訳チェックリスト](https://docs.google.com/spreadsheets/d/1uchKJ6EDepMUkARd680W9VqcZmaxqykU/edit#gid=1277928230)も活用ください。
 
 ## 0. 調整中の事項
 
