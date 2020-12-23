@@ -1,36 +1,6 @@
 version: 1
 rules:
 
-# 統一向け個別用語
-
-  - expected: カ月
-    patterns:
-      - か月
-      - ヵ月
-      - ヶ月
-      - ケ月
-
-  - expected: もつ
-    pattern:  持つ
-
-# 統一向けテクニカルワード（今後追加：既にあるTechWord以外の内容であれば追加）
-
-  - expected: ウォーター
-    pattern:  ウオーター
-
-  - expected: フィーチャ
-    pattern:  フィーチャー
-
-  - expected: マイルストン
-    pattern:  マイルストーン
-    
-  - expected: ステークホルダ
-    pattern:  ステークホルダー
-
-  - expected: ユーザーストーリー
-    pattern:  ユーザストーリー
-
-
 # 石田さんからの用語チェック（オーム社流用語統一）
 # きつければ/意味ない指摘が多い場合は以下から外すか、AllowListに追加することでエラー回避ください
 

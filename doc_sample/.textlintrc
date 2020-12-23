@@ -25,7 +25,15 @@
   "rules": {
     // 任意の用語ルール、別途データについては管理予定
     "prh": {
-      "rulePaths" :["./rule.yml"]
+      "rulePaths" :[
+          "./prh/common.yml",
+          "./prh/part1.yml",
+          "./prh/part2.yml",
+          "./prh/part3.yml",
+          "./prh/part4.yml",
+          "./prh/part5.yml",
+          "./prh/other.yml",
+      ]
     },
     // 技術用語について辞書＋Web DB用語を元にチェックする日本語向けのルール
     "spellcheck-tech-word": true,

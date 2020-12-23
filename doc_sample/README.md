@@ -6,5 +6,6 @@
 以下サンプルを置いてます。
 
 - 各章サンプル（chXX.md）
+- 各章表サンプル（chXX.xlsx）
 - textlint設定ファイル（.textlintrc）
 - textlint用語揺らぎ設定ルール（rule.yml）
