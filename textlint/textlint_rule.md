@@ -2,11 +2,21 @@
 
 textlintに設定したルール一式をまとめておきます。
 
+基本、[こちらのスプレッドシート](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=941388480)を確認ください。
+
+## 用語揺らぎルール一覧
+
+以下スプレッドシートから確認ください。（後者はrule.ymlを見るほうが早いです）
+
+- [spellcheck_tech_word参照用語揺らぎルール](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=246555494)
+- [rule.yml独自設定用語揺らぎルール](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=631667513)
+
+
 ## .textlintrc設定ルール一覧
 
-.textlintrcにもコメントで確認しやすくしてますが、参考としてください。また、[スプレッドシート](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=1355571623)に参考情報含めて置いておきます。
+.textlintrcにもコメントで確認しやすくしてますが、参考としてください。また、[スプレッドシート](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=941388480)に参考情報含めて置いておきます。
 
-個々のルールは
+※今後は↑をアップデート予定です。
 
 以下表の「警告」という記載は判定が厳しいためエラーではなく警告が出るようにしております。
 
@@ -36,7 +46,7 @@ textlintに設定したルール一式をまとめておきます。
 | &ensp;no-hankaku-kana | TRUE | 半角カナを使用しない：全角カタカナを使用してください。 |  |
 | &ensp;ja-no-weak-phrase | TRUE | 弱い日本語表現の利用を使用しない：かもしれない 等の弱い表現を使用しない。 |  |
 | &ensp;ja-no-successive-word | TRUE | 同一の単語を間違えて連続しているのをチェックする：誤字の可能性があります。 |  |
-| &ensp;ja-no-abusage | TRUE | よくある日本語の誤用をチェックする |  |
+| &ensp;ja-no-abusage | TRUE | よくある日本語の誤用をチェックする | 警告 |
 | &ensp;ja-no-redundant-expression | TRUE | 冗長な表現をチェックする："することができる"という冗長な表現を"できる"にするといったルール | 警告 |
 | &ensp;ja-unnatural-alphabet | TRUE | 入力ミスで発生する不自然なアルファベットをチェックする |  |
 | &ensp;no-unmatched-pair | TRUE | 対になっていない括弧をチェックする：1文中で(に対応する)がない場合などの括弧の対応関係 | 警告 |
@@ -55,10 +65,3 @@ textlintに設定したルール一式をまとめておきます。
 | textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet | TRUE | 全角と半角アルファベットを混在をチェックするtextlintルール | |
 | textlint-rule-footnote-order | TRUE | 引用の順序をチェック | |
 
-
-## 用語揺らぎルール一覧
-
-以下スプレッドシートから確認ください。（後者はrule.ymlを見るほうが早いかも…）
-
-- [spellcheck_tech_word参照用語揺らぎルール](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=1672926234)
-- [rule.yml独自設定用語揺らぎルール](https://docs.google.com/spreadsheets/d/1dLg0KlA861Vpdyo1fiYT441r_cJOJ5Gb/edit#gid=111415593)

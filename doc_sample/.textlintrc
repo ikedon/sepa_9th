@@ -5,21 +5,16 @@
     // 許可用語リスト（過去はWhitelistだったもの）用語としてはずしたいものを入れる
     // 各自で困った場合、以下に追加して回避してください
     "allowlist": {
-      "allow": [
-        "ignored-word",
-        "正しく",
-        "計画を実行に移す",
-        "最も",
-        "同様に",
-        "こなし",
-        "程度", "過程", "旅程",
-        "正直かつ",
-        "デグレード",
-        "スクラムマスター",
-        "サプライチェーン",
-        "（a）", "（b）", "（c）", "（d）"
+      "allowlistConfigPaths": [
+          "./allowlist//part1.json",
+          "./allowlist//part2.json",
+          "./allowlist//part3.json",
+          "./allowlist//part4.json",
+          "./allowlist//part5.json",
+          "./allowlist//other.json"
       ]
     }
+    
   },
 
   "rules": {
